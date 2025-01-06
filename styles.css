@@ -26,6 +26,9 @@ main {
 
 form {
     text-align: left;
+    padding-left: 15mm;
+    padding-right: 15mm;
+    box-sizing: border-box; /* Stellt sicher, dass Padding im berechneten Breitenwert enthalten ist */
 }
 
 label {
@@ -36,12 +39,13 @@ label {
 }
 
 input, select, button {
-    width: 100%;
+    width: calc(100% - 30mm); /* Abzug von 15mm auf beiden Seiten */
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Stellt sicher, dass Padding im berechneten Breitenwert enthalten ist */
 }
 
 button {
