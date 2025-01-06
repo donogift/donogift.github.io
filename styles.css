@@ -25,27 +25,32 @@ main {
 }
 
 form {
-    text-align: left;
-    padding-left: 15mm;
-    padding-right: 15mm;
-    box-sizing: border-box; /* Stellt sicher, dass Padding im berechneten Breitenwert enthalten ist */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15mm; /* Mindestens 15mm Abstand zum Rahmen */
+    box-sizing: border-box; /* Sicherstellen, dass das Padding im Breitenwert enthalten ist */
 }
 
 label {
-    display: block;
+    display: inline-block;
     margin-top: 15px;
+    margin-right: 8mm; /* Platz rechts neben dem Label */
     font-weight: bold;
     color: #555;
+    text-align: right;
+    width: calc(50% - 8mm); /* Labels nehmen 50% der Breite ein, abzüglich Platz */
 }
 
 input, select, button {
-    width: calc(100% - 30mm); /* Abzug von 15mm auf beiden Seiten */
+    display: inline-block;
+    width: calc(50% - 8mm); /* Eingabefelder nehmen 50% der Breite ein, abzüglich Platz */
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Stellt sicher, dass Padding im berechneten Breitenwert enthalten ist */
+    box-sizing: border-box; /* Sicherstellen, dass das Padding im Breitenwert enthalten ist */
 }
 
 button {
@@ -59,4 +64,12 @@ button {
 
 button:hover {
     background-color: #ff9295; /* Etwas dunkleres Pastellrot */
+}
+
+/* Zusätzliche Regel für die Ausrichtung von Labels und Eingabefeldern */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
 }
