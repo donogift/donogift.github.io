@@ -17,7 +17,7 @@ header {
 
 main {
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 90%; /* Flexibler für kleinere Bildschirme */
     padding: 20px;
     background: #ffffff;
     border-radius: 20px;
@@ -25,32 +25,23 @@ main {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15mm; /* Mindestens 15mm Abstand zum Rahmen */
-    box-sizing: border-box; /* Sicherstellen, dass das Padding im Breitenwert enthalten ist */
+    text-align: left;
 }
 
 label {
-    display: inline-block;
+    display: block;
     margin-top: 15px;
-    margin-right: 8mm; /* Platz rechts neben dem Label */
     font-weight: bold;
     color: #555;
-    text-align: right;
-    width: calc(50% - 8mm); /* Labels nehmen 50% der Breite ein, abzüglich Platz */
 }
 
 input, select, button {
-    display: inline-block;
-    width: calc(50% - 8mm); /* Eingabefelder nehmen 50% der Breite ein, abzüglich Platz */
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Sicherstellen, dass das Padding im Breitenwert enthalten ist */
 }
 
 button {
@@ -66,10 +57,24 @@ button:hover {
     background-color: #ff9295; /* Etwas dunkleres Pastellrot */
 }
 
-/* Zusätzliche Regel für die Ausrichtung von Labels und Eingabefeldern */
-.form-group {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-    width: 100%;
+/* Responsive Anpassungen */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.2em; /* Kleinere Schriftgröße für Header */
+        padding: 0.8em 0;
+    }
+
+    main {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    label {
+        font-size: 0.9em; /* Kleinere Schriftgröße für Labels */
+    }
+
+    button {
+        padding: 12px; /* Größerer Touch-Bereich */
+        font-size: 1em;
+    }
 }
