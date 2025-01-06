@@ -17,7 +17,7 @@ header {
 
 main {
     margin: 20px auto;
-    max-width: 90%; /* Flexibler für kleinere Bildschirme */
+    max-width: 600px;
     padding: 20px;
     background: #ffffff;
     border-radius: 20px;
@@ -37,7 +37,7 @@ label {
 
 input, select, button {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -55,26 +55,4 @@ button {
 
 button:hover {
     background-color: #ff9295; /* Etwas dunkleres Pastellrot */
-}
-
-/* Responsive Anpassungen */
-@media (max-width: 600px) {
-    header {
-        font-size: 1.2em; /* Kleinere Schriftgröße für Header */
-        padding: 0.8em 0;
-    }
-
-    main {
-        padding: 15px;
-        border-radius: 15px;
-    }
-
-    label {
-        font-size: 0.9em; /* Kleinere Schriftgröße für Labels */
-    }
-
-    button {
-        padding: 12px; /* Größerer Touch-Bereich */
-        font-size: 1em;
-    }
 }
