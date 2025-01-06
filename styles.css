@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-image: url('present.jpg'); /* Pfad zu deinem Bild */
+    background-image: url present.jpg; /* Pfad zu deinem Bild */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
