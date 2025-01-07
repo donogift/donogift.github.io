@@ -62,13 +62,19 @@ button:hover {
 }
 
 /* Styling für die Navigation */
+
+
+/* Navigation-Styling */
 nav ul {
-    list-style: none; /* Entfernt Aufzählungszeichen */
+    list-style: none; /* Entfernt die Bullet-Points */
     padding: 0;
     margin: 0;
     display: flex; /* Buttons nebeneinander */
-    justify-content: center; /* Zentriert die Navigation */
-    gap: 15px; /* Abstand zwischen den Buttons */
+    justify-content: center; /* Zentriert die Buttons */
+    gap: 15px; /* Abstand zwischen Buttons */
+    background-color: #0056b3; /* Hintergrundfarbe der Leiste */
+    padding: 10px;
+    border-radius: 10px; /* Runde Ecken für die Leiste */
 }
 
 nav ul li {
@@ -76,17 +82,17 @@ nav ul li {
 }
 
 nav ul li a {
-    display: inline-block; /* Ermöglicht Padding und Buttonform */
+    display: inline-block; /* Damit Padding und Buttonform funktioniert */
     padding: 10px 20px; /* Abstand innerhalb des Buttons */
-    text-decoration: none; /* Entfernt Unterstreichung */
-    background-color: #007BFF; /* Blaue Hintergrundfarbe */
-    color: white; /* Weiße Schriftfarbe */
-    border-radius: 5px; /* Abgerundete Ecken für Buttonform */
-    font-size: 16px; /* Textgröße */
-    font-weight: bold; /* Fetter Text */
+    text-decoration: none; /* Unterstreichung entfernen */
+    background-color: #007BFF; /* Farbe der Buttons */
+    color: white; /* Textfarbe */
+    border-radius: 5px; /* Abgerundete Ecken */
+    font-size: 16px;
+    font-weight: bold;
     transition: background-color 0.3s ease; /* Animierter Hover-Effekt */
 }
 
 nav ul li a:hover {
-    background-color: #0056b3; /* Dunklere Farbe beim Hover */
+    background-color: #004085; /* Hover-Farbe */
 }
