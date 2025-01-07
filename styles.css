@@ -60,15 +60,14 @@ button {
 button:hover {
     background-color: #ff9295; /* Etwas dunkleres Pastellrot */
 }
-
+/* Styling für die Navigation */
 nav ul {
-    list-style-type: none;
+    list-style: none; /* Entfernt Aufzählungszeichen */
     padding: 0;
-    display: flex;
-    gap: 20px;
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 0;
+    display: flex; /* Buttons nebeneinander */
+    justify-content: center; /* Zentriert die Navigation */
+    gap: 15px; /* Abstand zwischen den Buttons */
 }
 
 nav ul li {
@@ -76,11 +75,17 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    display: inline-block; /* Ermöglicht Padding und Buttonform */
+    padding: 10px 20px; /* Abstand innerhalb des Buttons */
+    text-decoration: none; /* Entfernt Unterstreichung */
+    background-color: #007BFF; /* Blaue Hintergrundfarbe */
+    color: white; /* Weiße Schriftfarbe */
+    border-radius: 5px; /* Abgerundete Ecken für Buttonform */
+    font-size: 16px; /* Textgröße */
+    font-weight: bold; /* Fetter Text */
+    transition: background-color 0.3s ease; /* Animierter Hover-Effekt */
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    background-color: #0056b3; /* Dunklere Farbe beim Hover */
 }
