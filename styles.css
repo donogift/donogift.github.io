@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: red; /* Pfad zum Bild */
+    background-image: url('presents.png'); /* Pfad zum Bild */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
