@@ -60,6 +60,7 @@ button {
 button:hover {
     background-color: #ff9295; /* Etwas dunkleres Pastellrot */
 }
+
 /* Styling für die Navigation */
 nav ul {
     list-style: none; /* Entfernt Aufzählungszeichen */
