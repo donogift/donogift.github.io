@@ -86,7 +86,7 @@ nav ul li a {
     display: inline-block; /* Damit Padding und Buttonform funktioniert */
     padding: 10px 20px; /* Abstand innerhalb des Buttons */
     text-decoration: none; /* Unterstreichung entfernen */
-    background-color: #007BFF; /* Farbe der Buttons */
+    background-color: #ffb6b9; /* Farbe der Buttons */
     color: white; /* Textfarbe */
     border-radius: 5px; /* Abgerundete Ecken */
     font-size: 16px;
