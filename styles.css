@@ -1,5 +1,5 @@
 body {
-    font-family: Playwrite Australia SA, sans-serif;
+    font-family: 'Playwrite Australia SA', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -12,6 +12,8 @@ body {
 
 
 header {
+
+    font-family: 'Arial', sans-serif;
     background-color: #b4c8e8; /* Pastellblau */
     color: white;
     padding: 1em 0;
