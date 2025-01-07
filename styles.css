@@ -73,7 +73,7 @@ nav ul {
     display: flex; /* Buttons nebeneinander */
     justify-content: center; /* Zentriert die Buttons */
     gap: 15px; /* Abstand zwischen Buttons */
-    background-color: #0056b3; /* Hintergrundfarbe der Leiste */
+    background-color: #CD9B9B; /* Hintergrundfarbe der Leiste */
     padding: 10px;
     border-radius: 10px; /* Runde Ecken für die Leiste */
 }
